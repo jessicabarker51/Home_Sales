@@ -1,27 +1,10 @@
 # Home_Sales
 
-We will use pyspark and sql to perform some analysis of home prices.
+Through utilizing PySpark and Spark SQL on Google Colab, this project serves to determine key metrics about home sales data. Then, Spark is utilized to create temporary views, partition the data, cache and uncache a temporary table. Some of the data key metric questions that were answered: What is the average price for a four-bedroom house sold for each year?
 
-We load the file from AWS S3 and read it into a dataframe.
+What is the average price of a home for each year it was built that has three bedrooms and three bathrooms?
 
-Create a temporary file to use in the analysis.
+What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
 
-We compute avarage sale price of houses based on:
-
-    *   Year the house was built.
-
-    *   Number of Bedrooms.
-
-    *   Number of Bathrooms.
-
-    *   Square footage.
-We create a cache for the temporary file and check to ensure it is created
-
-We partiton the dataframe and save a parquet
-
-We compare the run times for the temporary file, cached file and the parquet file.
-
-We uncache the temporary file and confirm the same.
-
-
+What is the "view" rating for homes costing more than or equal to $350,000?
 
